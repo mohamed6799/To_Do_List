@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>To Do List</title>
+</head>
+<body>
+
+    <div class="list d-flex align-items-center justify-content-center ">
+        <div class="toDoList bg-light rounded-2 p-1">
+            <!-- this is header to task-->
+            <div class="row mx-0 p-1 pb-2 border-bottom mb-3">
+                <div class="header col-12 px-2 d-flex align-items-center">
+                    <a onclick="active(this)" class="activeTast pe-3 shadow-none text-decoration-none">All</a>
+                    <a onclick="active(this)" class=" pe-3 shadow-none text-decoration-none">Pending</a>
+                    <a onclick="active(this)" class=" pe-3 shadow-none text-decoration-none">Complete</a>
+                    <button class="btn btn-primary px-2 py-1 text-light ms-auto" onclick="clearAll()">Clear All</button>
+                </div>
+                <!-- <div class="col-6 d-flex justify-content-end align-items-start">
+                </div> -->
+                <div class="item"></div>
+            </div>
+            <!-- this is body to task-->
+            <div class="tasks mb-3 pb-2 border-bottom ">
+                <!--this is all in tasks-->
+                <div class="a contentTaskAll block" id="contentTaskAll">
+                </div>
+                <!--this is pending in tasks-->
+                <div class="a contentTaskPen block" id="contentTaskPen">
+                    <!-- <div class="task p-3">
+                        <p>Morsi</p>
+                    </div> -->
+                </div>
+                <!--this is done in tasks-->
+                <div class="a contentTaskDone block" id="contentTaskDone">
+                    <!-- <div class="task  p-3">
+                        <p>Jad</p>
+                    </div> -->
+                </div>
+            </div>
+            <!-- this is footer to task-->
+            <div class="addTasks d-flex justify-content-center">
+                <input type="text" class=" content me-2 form-control shadow-none py-2 rounded-2 px-3" placeholder="Enter Task">
+                <button class="btn btn-primary px-3 text-light" onclick="submit()"><i class="fa-solid fa-plus text-light h3"></i></button>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

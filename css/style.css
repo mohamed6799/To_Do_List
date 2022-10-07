@@ -1,0 +1,43 @@
+*{
+    color: #333 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 16px;
+    
+}
+a{
+    cursor: pointer;
+}
+button{
+    border: none !important;
+}
+.row .col-6 a:hover{
+    color: #0d6efd !important;
+    transition: 0.3s ease;
+}
+.tasks{
+    overflow: auto;
+    min-height: 50vh;
+    max-height: 50vh;
+}
+.list{
+    height: 100vh;
+    overflow: hidden;
+    padding: 5px !important;
+    background-image: url(../img/background-1.jfif);
+    background-position: center center;
+    background-size: cover;
+}
+.toDoList{
+    min-width:40%;
+}
+.activeTast{
+    color: #0d6efd !important;
+}
+.block{
+    display: block !important;
+}
+.none{
+    display: none !important;
+}
+
